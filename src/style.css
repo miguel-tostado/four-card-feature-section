@@ -69,10 +69,26 @@
 
   .block-wrapper {
     display: grid;
-    grid-template-areas: "cyan" "red" "yellow" "blue";
+    grid-template-areas: "cyan" "red" "orange" "blue";
     grid-template-columns: 311px;
     grid-template-rows: repeat(4, 222px);
     row-gap: 24px;
+  }
+
+  .cyan {
+    grid-area: cyan;
+  }
+
+  .red {
+    grid-area: red;
+  }
+
+  .orange {
+    grid-area: orange;
+  }
+
+  .blue {
+    grid-area: blue;
   }
 
   .info-block-wrapper {
@@ -125,9 +141,50 @@
     display: flex;
     justify-content: flex-end;
   }
+}
 
-  .icon {
-    /* object-fit: none;
-    object-position: right bottom; */
+@media (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+
+  .div-wrap {
+    height: 762px;
+    width: 1110px;
+  }
+
+  .header-wrapper {
+    margin: auto;
+    margin-bottom: 64px;
+    text-align: center;
+    width: 540px;
+  }
+
+  .header {
+    font-size: 36px;
+    letter-spacing: 0.25px;
+  }
+
+  .block-wrapper {
+    grid-template-areas:
+      ". red ."
+      "cyan red blue"
+      "cyan orange blue"
+      ". orange .";
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(4, auto);
+    gap: 30px;
+  }
+
+  .info-block {
+    padding: 32px;
+  }
+
+  .block-header {
+    margin-bottom: 6px;
+  }
+
+  .block-body {
+    margin-bottom: 40px;
   }
 }
