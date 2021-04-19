@@ -29,7 +29,7 @@
     font-family: var(--ff-poppins);
     font-size: 15px;
     height: 1360px;
-    justify-content: center;
+    margin: 85px auto 78px;
     position: relative;
   }
 
@@ -118,7 +118,7 @@
   .color-div {
     border-bottom-style: solid;
     border-bottom-width: 3.55px;
-    bottom: 98.4%;
+    bottom: 98%;
     position: absolute;
     width: 100%;
   }
@@ -148,6 +148,7 @@
 @media (min-width: 1024px) {
   body {
     height: 100vh;
+    margin: 80px auto;
   }
 
   .div-wrap {
