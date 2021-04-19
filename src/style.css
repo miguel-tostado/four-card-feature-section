@@ -8,6 +8,8 @@
   --color-neutral-grayish-blue: hsl(229, 6%, 66%);
   --color-neutral-very-light-blue: hsl(0, 0%, 98%);
 
+  --ff-poppins: "Poppins", sans-serif;
+
   --fw-extra-light: 200;
   --fw-regular: 400;
   --fw-semi-bold: 600;
@@ -21,6 +23,111 @@
 
 @media (min-width: 200px) {
   body {
+    background-color: var(--color-neutral-very-light-blue);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-poppins);
     font-size: 15px;
+    height: 1360px;
+    justify-content: center;
+    position: relative;
+  }
+
+  .div-wrap {
+    color: var(--color-neutral-very-dark-blue);
+    height: 1197px;
+    margin: auto;
+    width: 311px;
+  }
+
+  .header-wrapper {
+    margin-bottom: 76px;
+  }
+
+  .header {
+    font-size: 24px;
+    font-weight: var(--fw-extra-light);
+    letter-spacing: 0.17px;
+    margin-bottom: 13px;
+  }
+
+  .bold,
+  block-header {
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .header-body {
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    line-height: 25px;
+  }
+
+  .header-body,
+  .block-body {
+    opacity: 50%;
+  }
+
+  .block-wrapper {
+    display: grid;
+    grid-template-areas: "cyan" "red" "yellow" "blue";
+    grid-template-columns: 311px;
+    grid-template-rows: repeat(4, 222px);
+    row-gap: 24px;
+  }
+
+  .info-block-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    -moz-box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  }
+
+  .info-block {
+    padding: 27.5px 28px;
+  }
+
+  .block-header {
+    font-size: 20px;
+  }
+
+  .block-body {
+    font-size: 13px;
+    letter-spacing: 0.09px;
+    line-height: 23px;
+    margin-bottom: 33px;
+  }
+
+  .color-div {
+    position: absolute;
+    width: 100%;
+    bottom: 98.4%;
+  }
+
+  .cyan-border {
+    border-bottom: 3.55px solid var(--color-primary-cyan);
+  }
+
+  .red-border {
+    border-bottom: 3.55px solid var(--color-primary-red);
+  }
+
+  .orange-border {
+    border-bottom: 3.55px solid var(--color-primary-orange);
+  }
+
+  .blue-border {
+    border-bottom: 3.55px solid var(--color-primary-blue);
+  }
+
+  .img-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .icon {
+    /* object-fit: none;
+    object-position: right bottom; */
   }
 }
