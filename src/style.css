@@ -116,25 +116,27 @@
   }
 
   .color-div {
+    border-bottom-style: solid;
+    border-bottom-width: 3.55px;
+    bottom: 98.4%;
     position: absolute;
     width: 100%;
-    bottom: 98.4%;
   }
 
   .cyan-border {
-    border-bottom: 3.55px solid var(--color-primary-cyan);
+    border-bottom-color: hsl(180, 62%, 55%);
   }
 
   .red-border {
-    border-bottom: 3.55px solid var(--color-primary-red);
+    border-bottom-color: hsl(0, 78%, 62%);
   }
 
   .orange-border {
-    border-bottom: 3.55px solid var(--color-primary-orange);
+    border-bottom-color: hsl(34, 97%, 64%);
   }
 
   .blue-border {
-    border-bottom: 3.55px solid var(--color-primary-blue);
+    border-bottom-color: hsl(212, 86%, 64%);
   }
 
   .img-wrapper {
